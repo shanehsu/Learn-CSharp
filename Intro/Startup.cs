@@ -20,7 +20,7 @@ namespace Intro {
         public void ConfigureServices(IServiceCollection services) {
             // （加入 MVC）1. 加入 MVC 支援
             // （加入 MVC）這邊處裡的是 Dependency Injection
-            services.AddMvc();
+            services.AddMvc();    
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

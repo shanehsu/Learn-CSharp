@@ -13,6 +13,7 @@ namespace Intro {
         public static void Main(String[] args) => BuildWebHost(args).Run();
         public static IWebHost BuildWebHost(String[] args) {
             return WebHost.CreateDefaultBuilder(args)
+                          .UseApplicationInsights()
                           .UseStartup<Startup>()
                           .Build();
         }
